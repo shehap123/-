@@ -46,7 +46,7 @@ async def download(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f'حدث خطأ: {str(e)}')
 
 async def main():
-    app = ApplicationBuilder().token("YOUR_TOKEN").build()  # استبدل YOUR_TOKEN بالتوكن الخاص بك
+    app = ApplicationBuilder().token("8141976643:AAFSJsCeUUWPSN4tVr5JOGleNzDKLw-ByL8").build()  # استبدل YOUR_TOKEN بالتوكن الخاص بك
     
     app.add_handler(CommandHandler("start", start))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, download))
